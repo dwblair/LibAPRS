@@ -228,7 +228,7 @@ void APRS_sendLoc(void *_buffer, size_t length) {
     }
     uint8_t *packet = (uint8_t*)malloc(payloadLength);
     uint8_t *ptr = packet;
-    packet[0] = '=';
+    packet[0] = '!';
     packet[9] = symbolTable;
     packet[19] = symbol;
     ptr++;
